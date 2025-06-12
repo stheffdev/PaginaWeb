@@ -159,6 +159,12 @@ footer {
   color: #ff6b00;
 }
 
+.error-message {
+  display: none;
+  color: #e2505c;
+  padding-right: 10px;
+  font-weight: bolder;
+}
 
 /* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
