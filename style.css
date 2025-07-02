@@ -252,3 +252,75 @@ footer {
     padding: 100px;
   }
 }
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1 1 300px;
+}
+
+.contact-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  background-color: #fdf9f7;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #f4511e;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

@@ -33,10 +33,3 @@ form.addEventListener('change', () => {
   localData.message = messageInput.value;
   dataLocalStore();
 });
-
-if (JSON.parse(localStorage.getItem('name')) !== null) {
-  localData = JSON.parse(localStorage.getItem('name'));
-  nameInput.setAttribute('value', localData.name);
-  emailInput.setAttribute('value', localData.email);
-  messageInput.value = localData.message;
-}
